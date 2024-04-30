@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="paper-example" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>paper-example</text>
+    </name>
+    <page id="n0">
+      <place id="p0">
+        <name>
+          <text>p0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="p1">
+        <name>
+          <text>p1</text>
+        </name>
+      </place>
+      <place id="p2">
+        <name>
+          <text>p2</text>
+        </name>
+      </place>
+      <transition id="a">
+        <name>
+          <text>a</text>
+        </name>
+      </transition>
+      <transition id="d">
+        <name>
+          <text>d</text>
+        </name>
+      </transition>
+      <transition id="b">
+        <name>
+          <text>b</text>
+        </name>
+      </transition>
+      <transition id="c">
+        <name>
+          <text>c</text>
+        </name>
+      </transition>
+      <arc id="140095744267824" source="p0" target="a"/>
+      <arc id="140095744268112" source="b" target="p1"/>
+      <arc id="140095744268208" source="p1" target="c"/>
+      <arc id="140095744267920" source="p0" target="b"/>
+      <arc id="140095744268016" source="a" target="p1"/>
+      <arc id="140095744271376" source="p1" target="d"/>
+      <arc id="140095744271472" source="c" target="p2"/>
+      <arc id="140095744271568" source="d" target="p2"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="p2">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>
